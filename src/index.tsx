@@ -19,7 +19,7 @@ import GlobalBackground from "./components/GlobalBackground";
 const router = createHashRouter(
   [
     {
-      path: "/",
+      path: "/*",
       element: <App />,
     },
     {
