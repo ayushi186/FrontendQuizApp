@@ -16,20 +16,16 @@ import { ToggleProvider } from "./components/ThemeToggleContext";
 import ThemeToggle from "./components/ThemeToggel";
 import GlobalBackground from "./components/GlobalBackground";
 
-const router = createHashRouter(
-  [
-    {
-      path: "/*",
-      element: <App />,
-    },
-    {
-      path: "/Question",
-      element: <QuestionComp />,
-    },
-  ],
-  { basename: "/FrontEndQuizApp" }
-);
-
+const router = createHashRouter([
+  {
+    path: "/*",
+    element: <App />,
+  },
+  {
+    path: "/Question",
+    element: <QuestionComp />,
+  },
+]);
 // declare function RouterProvider(props: RouterProviderProps): React.ReactElement;
 
 interface RouterProviderProps {
